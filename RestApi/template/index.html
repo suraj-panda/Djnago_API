@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Message</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+            <h1 class="display-3">Web Scraping Django!</h1>
+            <p class="lead"><strong>Enter Your Country, The results will be saved in JSON format and then run JSON file to get the output</strong></p>
+            <hr>
+            <br>
+            <form method="POST" enctype="multipart/form-data" action="retrieve">
+                {% csrf_token %}
+            <p class="lead">
+                <input type="text" name="country" value="" placeholder="Your Country" required><br><br>
+              <input type="submit" class="btn btn-primary btn-sm" value="Get JSON File">
+            </form>
+            {{a}}<br>
+            {{b}}
+            </p>
+          </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
